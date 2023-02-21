@@ -56,8 +56,6 @@ reg c_led3_en;
 
 reg r_init_ok;
 reg r_btn_press;
-reg r_btn_press_in;
-reg r_btn_press_out;
 
 reg [2:0] r_state;
 reg [2:0] c_next_state;
@@ -72,46 +70,30 @@ begin
 	r_led3_en <= 1'b0;
 	
 	r_btn_press <= 1'b0;
-	r_btn_press_in <= 1'b0;
-	r_btn_press_out <= 1'b0;
 	
 	r_init_ok <= 1'b1;
 	r_state <= `ST_INIT;
 end
 
-/* BUTTON - REG */
+/* BUTTON - FLIP FLOP */
 always @ (posedge i_clk)
 begin
-	// BUTTON PRESS IN
+
+	// BUTTON PRESSED
 	if (~i_btn)
-	begin
-		r_btn_press_in <= 1;
-		r_btn_press_out <= 0;
-		r_btn_press <= 0;
+	begin		
+		r_btn_press <= 1;		
 	end
 	
-	// BUTTON PRESS OUT
-	else if (i_btn)
-	begin
-		//r_btn_press_in <= 0;
-		r_btn_press_out <= 1;		
-		r_btn_press <= 0;
-	end	
-	
-	else if(r_btn_press_in && r_btn_press_out)
-	begin
-		r_btn_press <= 1;
-	end	
-	
+	// NOT PRESSED
 	else
-	begin
-		r_btn_press_in <= 0;
-		r_btn_press_out <= 1;
+	begin		
+		r_state <= c_next_state;		
 		r_btn_press <= 0;
-	end
+	end	
 end
 
-/* BUTTON - REG */
+/* LED - FLIP FLOP */
 always @ (posedge i_clk)
 begin
 	r_led0_en <= c_led0_en;
@@ -128,19 +110,14 @@ begin
 	c_led1_en = 0;
 	c_led2_en = 0;
 	c_led3_en = 0;
-	c_next_state = r_state;
-	
+	c_next_state = r_state;	
 	
 	case (r_state)
 		`ST_INIT:
 		begin
 			if (r_init_ok) begin
 				c_next_state = `ST_IDLE;
-			end
-			
-			else begin
-				c_next_state = `ST_INIT;
-			end
+			end			
 		end
 		
 		`ST_IDLE:
