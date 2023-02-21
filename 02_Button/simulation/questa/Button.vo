@@ -1,0 +1,122 @@
+// Copyright (C) 2022  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition"
+
+// DATE "02/21/2023 16:15:34"
+
+// 
+// Device: Altera EPM240T100C5 Package TQFP100
+// 
+
+// 
+// This Verilog file should be used for Questa Intel FPGA (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Button (
+	i_btn,
+	i_clk,
+	o_led0,
+	o_led1,
+	o_led2,
+	o_led3);
+input 	i_btn;
+input 	i_clk;
+output 	o_led0;
+output 	o_led1;
+output 	o_led2;
+output 	o_led3;
+
+// Design Ports Information
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+
+
+// Location: PIN_44,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_btn~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(i_btn));
+// synopsys translate_off
+defparam \i_btn~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_64,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_clk~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(i_clk));
+// synopsys translate_off
+defparam \i_clk~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_50,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_led0~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(o_led0));
+// synopsys translate_off
+defparam \o_led0~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_49,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_led1~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(o_led1));
+// synopsys translate_off
+defparam \o_led1~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_48,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_led2~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(o_led2));
+// synopsys translate_off
+defparam \o_led2~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_47,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_led3~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(o_led3));
+// synopsys translate_off
+defparam \o_led3~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule
