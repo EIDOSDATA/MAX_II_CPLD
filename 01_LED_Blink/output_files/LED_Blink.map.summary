@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Sat Dec 23 22:55:27 2023
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : LED_Blink
+Top-level Entity Name : LED_Blink
+Family : MAX II
+Total logic elements : 190
+Total pins : 5
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
