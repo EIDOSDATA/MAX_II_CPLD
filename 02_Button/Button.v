@@ -153,74 +153,47 @@ begin
 				c_next_state = `ST_IDLE;
 			end
 		end
+		
 		`ST_LED0_ON:
 		begin
 			if (r_btn_press) begin
-				c_led0_en = 0;
-				c_led1_en = 0;
-				c_led2_en = 0;
-				c_led3_en = 0;
 				c_next_state = `ST_LED1_ON;
 			end
 			
 			else begin
 				c_led0_en = 1;
-				c_led1_en = 0;
-				c_led2_en = 0;
-				c_led3_en = 0;
 				c_next_state = `ST_LED0_ON;
 			end
 		end
 		`ST_LED1_ON:
 		begin
 			if (r_btn_press) begin
-				c_led0_en = 0;
-				c_led1_en = 0;
-				c_led2_en = 0;
-				c_led3_en = 0;
 				c_next_state = `ST_LED2_ON;
 			end
 			
 			else begin
-				c_led0_en = 0;
 				c_led1_en = 1;
-				c_led2_en = 0;
-				c_led3_en = 0;
 				c_next_state = `ST_LED1_ON;
 			end
 		end
 		`ST_LED2_ON:
 		begin
 			if (r_btn_press) begin
-				c_led0_en = 0;
-				c_led1_en = 0;
-				c_led2_en = 1;
-				c_led3_en = 0;
 				c_next_state = `ST_LED3_ON;
 			end
 			
 			else begin
-				c_led0_en = 0;
-				c_led1_en = 0;
 				c_led2_en = 1;
-				c_led3_en = 0;
 				c_next_state = `ST_LED2_ON;
 			end
 		end
 		`ST_LED3_ON:
 		begin
 			if (r_btn_press) begin
-				c_led0_en = 0;
-				c_led1_en = 0;
-				c_led2_en = 0;
-				c_led3_en = 0;
 				c_next_state = `ST_LED0_ON;
 			end
 			
 			else begin
-				c_led0_en = 0;
-				c_led1_en = 0;
-				c_led2_en = 0;
 				c_led3_en = 1;
 				c_next_state = `ST_LED3_ON;
 			end

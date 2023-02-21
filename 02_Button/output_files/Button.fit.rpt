@@ -1,5 +1,5 @@
 Fitter report for Button
-Tue Feb 21 16:15:31 2023
+Tue Feb 21 16:33:54 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +-----------------------+------------------------------------------------+
-; Fitter Status         ; Successful - Tue Feb 21 16:15:31 2023          ;
+; Fitter Status         ; Successful - Tue Feb 21 16:33:54 2023          ;
 ; Quartus Prime Version ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name         ; Button                                         ;
 ; Top-level Entity Name ; Button                                         ;
@@ -460,8 +460,8 @@ Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments 
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/eidos/GitHub/MAX_II_CPLD/02_Button/output_files/Button.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5328 megabytes
-    Info: Processing ended: Tue Feb 21 16:15:31 2023
+    Info: Peak virtual memory: 5324 megabytes
+    Info: Processing ended: Tue Feb 21 16:33:54 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
