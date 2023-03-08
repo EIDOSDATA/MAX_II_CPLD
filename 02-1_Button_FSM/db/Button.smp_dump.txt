@@ -1,0 +1,9 @@
+
+State Machine - |Button|r_state
+Name r_state.101 r_state.100 r_state.011 r_state.010 r_state.001 r_state.000 
+r_state.000 0 0 0 0 0 0 
+r_state.001 0 0 0 0 1 1 
+r_state.010 0 0 0 1 0 1 
+r_state.011 0 0 1 0 0 1 
+r_state.100 0 1 0 0 0 1 
+r_state.101 1 0 0 0 0 1 
