@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LED_SHIFT
-Thu Dec 28 01:51:33 2023
+Thu Dec 28 03:15:17 2023
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -15,10 +15,11 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |LED_SHIFT|r_state
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |LED_SHIFT
- 13. Analysis & Synthesis Messages
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |LED_SHIFT
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,13 +46,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Dec 28 01:51:33 2023          ;
+; Analysis & Synthesis Status ; Successful - Thu Dec 28 03:15:17 2023          ;
 ; Quartus Prime Version       ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name               ; LED_SHIFT                                      ;
 ; Top-level Entity Name       ; LED_SHIFT                                      ;
 ; Family                      ; MAX II                                         ;
-; Total logic elements        ; 67                                             ;
-; Total pins                  ; 10                                             ;
+; Total logic elements        ; 0                                              ;
+; Total pins                  ; 64                                             ;
 ; Total virtual pins          ; 0                                              ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
 +-----------------------------+------------------------------------------------+
@@ -158,33 +159,28 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 67    ;
-;     -- Combinational with no register       ; 21    ;
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
 ;     -- Register only                        ; 0     ;
-;     -- Combinational with a register        ; 46    ;
+;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 17    ;
-;     -- 3 input functions                    ; 6     ;
-;     -- 2 input functions                    ; 41    ;
-;     -- 1 input functions                    ; 2     ;
-;     -- 0 input functions                    ; 1     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 36    ;
-;     -- arithmetic mode                      ; 31    ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 32    ;
+;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 46    ;
-; Total logic cells in carry chains           ; 32    ;
-; I/O pins                                    ; 10    ;
-; Maximum fan-out node                        ; i_clk ;
-; Maximum fan-out                             ; 46    ;
-; Total fan-out                               ; 267   ;
-; Average fan-out                             ; 3.47  ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 64    ;
 +---------------------------------------------+-------+
 
 
@@ -193,7 +189,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |LED_SHIFT                 ; 67 (67)     ; 46           ; 0          ; 10   ; 0            ; 21 (21)      ; 0 (0)             ; 46 (46)          ; 32 (32)         ; 0 (0)      ; |LED_SHIFT          ; LED_SHIFT   ; work         ;
+; |LED_SHIFT                 ; 0 (0)       ; 0            ; 0          ; 64   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LED_SHIFT          ; LED_SHIFT   ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,8 +215,23 @@ Encoding Type:  One-Hot
 ; r_state~6                             ; Lost fanout        ;
 ; r_state~7                             ; Lost fanout        ;
 ; r_state~8                             ; Lost fanout        ;
-; Total Number of Removed Registers = 3 ;                    ;
+; r_btn_press                           ; Lost fanout        ;
+; r_state.000                           ; Lost fanout        ;
+; r_state.001                           ; Lost fanout        ;
+; r_state.010                           ; Lost fanout        ;
+; r_state.011                           ; Lost fanout        ;
+; Total Number of Removed Registers = 8 ;                    ;
 +---------------------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                             ;
++---------------+--------------------+----------------------------------------------------+
+; Register name ; Reason for Removal ; Registers Removed due to This Register             ;
++---------------+--------------------+----------------------------------------------------+
+; r_state~6     ; Lost Fanouts       ; r_btn_press, r_state.000, r_state.001, r_state.011 ;
+; r_state~7     ; Lost Fanouts       ; r_state.010                                        ;
++---------------+--------------------+----------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -228,25 +239,23 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 46    ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 11    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |LED_SHIFT|r_clk_cnt[20]     ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |LED_SHIFT|r_g_led_status[4] ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |LED_SHIFT|r_state           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |LED_SHIFT|r_state         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +---------------------------------------------------------------------------+
@@ -265,22 +274,87 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Thu Dec 28 01:51:28 2023
+    Info: Processing started: Thu Dec 28 03:15:13 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LED_SHIFT -c LED_SHIFT
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file led_shift.v
     Info (12023): Found entity 1: LED_SHIFT File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 21
 Info (12127): Elaborating entity "LED_SHIFT" for the top level hierarchy
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
-Info (21057): Implemented 77 device resources after synthesis - the final resource count might be different
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "o_g_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
+    Warning (13410): Pin "o_g_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
+    Warning (13410): Pin "o_g_led[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
+    Warning (13410): Pin "o_g_led[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
+    Warning (13410): Pin "o_g_led[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
+    Warning (13410): Pin "o_g_led[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
+    Warning (13410): Pin "o_g_led[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
+    Warning (13410): Pin "o_g_led[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
+    Warning (13410): Pin "o_r_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 56
+    Warning (13410): Pin "o_r_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 56
+    Warning (13410): Pin "o_y_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 57
+    Warning (13410): Pin "o_y_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 57
+    Warning (13410): Pin "o_y_led[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 57
+    Warning (13410): Pin "o_y_led[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 57
+    Warning (13410): Pin "o_t_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
+    Warning (13410): Pin "o_t_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
+    Warning (13410): Pin "o_t_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
+    Warning (13410): Pin "o_t_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
+    Warning (13410): Pin "o_t_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
+    Warning (13410): Pin "o_t_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
+    Warning (13410): Pin "o_t_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
+    Warning (13410): Pin "o_t_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
+    Warning (13410): Pin "o_t2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
+    Warning (13410): Pin "o_t2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
+    Warning (13410): Pin "o_t2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
+    Warning (13410): Pin "o_t2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
+    Warning (13410): Pin "o_t2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
+    Warning (13410): Pin "o_t2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
+    Warning (13410): Pin "o_t2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
+    Warning (13410): Pin "o_t2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
+    Warning (13410): Pin "o_m_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
+    Warning (13410): Pin "o_m_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
+    Warning (13410): Pin "o_m_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
+    Warning (13410): Pin "o_m_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
+    Warning (13410): Pin "o_m_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
+    Warning (13410): Pin "o_m_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
+    Warning (13410): Pin "o_m_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
+    Warning (13410): Pin "o_m_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
+    Warning (13410): Pin "o_m2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
+    Warning (13410): Pin "o_m2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
+    Warning (13410): Pin "o_m2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
+    Warning (13410): Pin "o_m2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
+    Warning (13410): Pin "o_m2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
+    Warning (13410): Pin "o_m2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
+    Warning (13410): Pin "o_m2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
+    Warning (13410): Pin "o_m2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
+    Warning (13410): Pin "o_s_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
+    Warning (13410): Pin "o_s_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
+    Warning (13410): Pin "o_s_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
+    Warning (13410): Pin "o_s_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
+    Warning (13410): Pin "o_s_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
+    Warning (13410): Pin "o_s_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
+    Warning (13410): Pin "o_s_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
+    Warning (13410): Pin "o_s_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
+    Warning (13410): Pin "o_s2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+    Warning (13410): Pin "o_s2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+    Warning (13410): Pin "o_s2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+    Warning (13410): Pin "o_s2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+    Warning (13410): Pin "o_s2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+    Warning (13410): Pin "o_s2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+    Warning (13410): Pin "o_s2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+    Warning (13410): Pin "o_s2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "i_btn" File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (15610): No output dependent on input pin "i_clk" File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 67 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4704 megabytes
-    Info: Processing ended: Thu Dec 28 01:51:33 2023
-    Info: Elapsed time: 00:00:05
+    Info (21059): Implemented 62 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 67 warnings
+    Info: Peak virtual memory: 4705 megabytes
+    Info: Processing ended: Thu Dec 28 03:15:17 2023
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:06
 
 

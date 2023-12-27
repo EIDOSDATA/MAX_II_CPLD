@@ -97,69 +97,69 @@ VCCIO1                       : 31        : power  :                   : 3.3V    
 GNDIO                        : 32        : gnd    :                   :         :           :                
 GND*                         : 33        :        :                   :         : 1         :                
 GND*                         : 34        :        :                   :         : 1         :                
-GND*                         : 35        :        :                   :         : 1         :                
-GND*                         : 36        :        :                   :         : 1         :                
-GND*                         : 37        :        :                   :         : 1         :                
-GND*                         : 38        :        :                   :         : 1         :                
-GND*                         : 39        :        :                   :         : 1         :                
-GND*                         : 40        :        :                   :         : 1         :                
-GND*                         : 41        :        :                   :         : 1         :                
-GND*                         : 42        :        :                   :         : 1         :                
-GND*                         : 43        :        :                   :         : 1         :                
+o_s2_fnd[7]                  : 35        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s2_fnd[6]                  : 36        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s2_fnd[5]                  : 37        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s2_fnd[4]                  : 38        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s2_fnd[3]                  : 39        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s2_fnd[2]                  : 40        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s2_fnd[1]                  : 41        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s2_fnd[0]                  : 42        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s_fnd[7]                   : 43        : output : 3.3-V LVTTL       :         : 1         : Y              
 i_btn                        : 44        : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 45        : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 46        : gnd    :                   :         :           :                
-GND*                         : 47        :        :                   :         : 1         :                
-GND*                         : 48        :        :                   :         : 1         :                
-GND*                         : 49        :        :                   :         : 1         :                
-GND*                         : 50        :        :                   :         : 1         :                
-GND*                         : 51        :        :                   :         : 1         :                
-GND*                         : 52        :        :                   :         : 2         :                
-GND*                         : 53        :        :                   :         : 2         :                
-GND*                         : 54        :        :                   :         : 2         :                
-GND*                         : 55        :        :                   :         : 2         :                
-GND*                         : 56        :        :                   :         : 2         :                
-GND*                         : 57        :        :                   :         : 2         :                
-GND*                         : 58        :        :                   :         : 2         :                
+o_y_led[3]                   : 47        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_y_led[2]                   : 48        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_y_led[1]                   : 49        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_y_led[0]                   : 50        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s_fnd[6]                   : 51        : output : 3.3-V LVTTL       :         : 1         : Y              
+o_s_fnd[5]                   : 52        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_s_fnd[4]                   : 53        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_s_fnd[3]                   : 54        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_s_fnd[2]                   : 55        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_s_fnd[1]                   : 56        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_s_fnd[0]                   : 57        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_r_led[1]                   : 58        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 59        : power  :                   : 3.3V    : 2         :                
 GNDIO                        : 60        : gnd    :                   :         :           :                
-GND*                         : 61        :        :                   :         : 2         :                
-GND*                         : 62        :        :                   :         : 2         :                
+o_m2_fnd[7]                  : 61        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m2_fnd[6]                  : 62        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCINT                       : 63        : power  :                   : 2.5V/3.3V :           :                
 i_clk                        : 64        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GNDINT                       : 65        : gnd    :                   :         :           :                
-GND*                         : 66        :        :                   :         : 2         :                
-GND*                         : 67        :        :                   :         : 2         :                
-GND*                         : 68        :        :                   :         : 2         :                
-GND*                         : 69        :        :                   :         : 2         :                
-GND*                         : 70        :        :                   :         : 2         :                
-GND*                         : 71        :        :                   :         : 2         :                
-GND*                         : 72        :        :                   :         : 2         :                
-GND*                         : 73        :        :                   :         : 2         :                
-GND*                         : 74        :        :                   :         : 2         :                
-GND*                         : 75        :        :                   :         : 2         :                
-GND*                         : 76        :        :                   :         : 2         :                
-GND*                         : 77        :        :                   :         : 2         :                
-GND*                         : 78        :        :                   :         : 2         :                
+o_m2_fnd[5]                  : 66        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m2_fnd[4]                  : 67        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m2_fnd[3]                  : 68        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m2_fnd[2]                  : 69        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m2_fnd[1]                  : 70        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m2_fnd[0]                  : 71        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m_fnd[7]                   : 72        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m_fnd[6]                   : 73        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m_fnd[5]                   : 74        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m_fnd[4]                   : 75        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m_fnd[3]                   : 76        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m_fnd[2]                   : 77        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_m_fnd[1]                   : 78        : output : 3.3-V LVTTL       :         : 2         : Y              
 GNDIO                        : 79        : gnd    :                   :         :           :                
 VCCIO2                       : 80        : power  :                   : 3.3V    : 2         :                
-GND*                         : 81        :        :                   :         : 2         :                
-GND*                         : 82        :        :                   :         : 2         :                
-GND*                         : 83        :        :                   :         : 2         :                
-GND*                         : 84        :        :                   :         : 2         :                
-GND*                         : 85        :        :                   :         : 2         :                
-GND*                         : 86        :        :                   :         : 2         :                
-GND*                         : 87        :        :                   :         : 2         :                
-GND*                         : 88        :        :                   :         : 2         :                
-GND*                         : 89        :        :                   :         : 2         :                
-GND*                         : 90        :        :                   :         : 2         :                
-GND*                         : 91        :        :                   :         : 2         :                
-GND*                         : 92        :        :                   :         : 2         :                
+o_m_fnd[0]                   : 81        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_r_led[0]                   : 82        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t2_fnd[7]                  : 83        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t2_fnd[6]                  : 84        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t2_fnd[5]                  : 85        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t2_fnd[4]                  : 86        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t2_fnd[3]                  : 87        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t2_fnd[2]                  : 88        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t2_fnd[1]                  : 89        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t2_fnd[0]                  : 90        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t_fnd[7]                   : 91        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t_fnd[6]                   : 92        : output : 3.3-V LVTTL       :         : 2         : Y              
 GNDIO                        : 93        : gnd    :                   :         :           :                
 VCCIO2                       : 94        : power  :                   : 3.3V    : 2         :                
-GND*                         : 95        :        :                   :         : 2         :                
-GND*                         : 96        :        :                   :         : 2         :                
-GND*                         : 97        :        :                   :         : 2         :                
-GND*                         : 98        :        :                   :         : 2         :                
-GND*                         : 99        :        :                   :         : 2         :                
-GND*                         : 100       :        :                   :         : 2         :                
+o_t_fnd[5]                   : 95        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t_fnd[4]                   : 96        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t_fnd[3]                   : 97        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t_fnd[2]                   : 98        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t_fnd[1]                   : 99        : output : 3.3-V LVTTL       :         : 2         : Y              
+o_t_fnd[0]                   : 100       : output : 3.3-V LVTTL       :         : 2         : Y              

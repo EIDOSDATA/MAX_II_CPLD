@@ -33,9 +33,16 @@ module LED_SHIFT
 	o_g_led6,
 	o_g_led7
 	*/
-	o_g_led
+	o_g_led,
+	o_r_led,
+	o_y_led,
+	o_t_fnd,
+	o_t2_fnd,
+	o_m_fnd,
+	o_m2_fnd,
+	o_s_fnd,
+	o_s2_fnd	
 // {ALTERA_ARGS_END} DO NOT REMOVE THIS LINE!
-
 );
 
 // {ALTERA_IO_BEGIN} DO NOT REMOVE THIS LINE!
@@ -44,7 +51,17 @@ parameter	sys_clk = 1000000;
 /* GPIO :: PIN SETTING */
 input				i_clk;
 input				i_btn;
+
 output [7:0] 	o_g_led;
+output [1:0] 	o_r_led;
+output [3:0] 	o_y_led;
+output [7:0]	o_t_fnd;
+output [7:0]	o_t2_fnd;
+output [7:0]	o_m_fnd;
+output [7:0]	o_m2_fnd;
+output [7:0]	o_s_fnd;
+output [7:0]	o_s2_fnd;
+
 /*
 output 			o_g_led0;
 output 			o_g_led1;
@@ -217,6 +234,20 @@ assign o_g_led5 = r_g_led_en;
 assign o_g_led6 = r_g_led_en;
 assign o_g_led7 = r_g_led_en;
 */
-assign o_g_led = r_g_led_status;
+
+//assign o_g_led = r_g_led_status;
+/* LED */
+assign o_g_led = 8'hFF;
+assign o_r_led = 2'b11;
+assign o_y_led = 4'hF;
+
+/* FND */
+assign o_t_fnd = 8'hFF;
+assign o_t2_fnd = 8'hFF;
+assign o_m_fnd = 8'hFF;
+assign o_m2_fnd = 8'hFF;
+assign o_s_fnd = 8'hFF;
+assign o_s2_fnd = 8'hFF;
+
 // {ALTERA_MODULE_END} DO NOT REMOVE THIS LINE!
 endmodule

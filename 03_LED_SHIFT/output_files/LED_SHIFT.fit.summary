@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu Dec 28 01:51:34 2023
+Fitter Status : Successful - Thu Dec 28 03:15:19 2023
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : LED_SHIFT
 Top-level Entity Name : LED_SHIFT
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 67 / 240 ( 28 % )
-Total pins : 10 / 80 ( 13 % )
+Total logic elements : 0 / 240 ( 0 % )
+Total pins : 64 / 80 ( 80 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
