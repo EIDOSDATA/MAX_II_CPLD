@@ -106,7 +106,7 @@ GND*                         : 40        :        :                   :         
 GND*                         : 41        :        :                   :         : 1         :                
 GND*                         : 42        :        :                   :         : 1         :                
 GND*                         : 43        :        :                   :         : 1         :                
-i_btn                        : 44        : input  : 3.3-V LVTTL       :         : 1         : Y              
+i_btn                        : 44        : input  : 3.3-V LVCMOS      :         : 1         : Y              
 VCCIO1                       : 45        : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 46        : gnd    :                   :         :           :                
 GND*                         : 47        :        :                   :         : 1         :                

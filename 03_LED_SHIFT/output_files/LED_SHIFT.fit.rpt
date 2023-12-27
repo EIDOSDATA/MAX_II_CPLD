@@ -1,5 +1,5 @@
 Fitter report for LED_SHIFT
-Thu Dec 28 01:23:51 2023
+Thu Dec 28 01:40:32 2023
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +-----------------------+------------------------------------------------+
-; Fitter Status         ; Successful - Thu Dec 28 01:23:51 2023          ;
+; Fitter Status         ; Successful - Thu Dec 28 01:40:32 2023          ;
 ; Quartus Prime Version ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name         ; LED_SHIFT                                      ;
 ; Top-level Entity Name ; LED_SHIFT                                      ;
@@ -215,7 +215,7 @@ The pin-out file can be found in C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ; Slow Slew Rate ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
-; i_btn ; 44    ; 1        ; 6            ; 0            ; 2           ; 4                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; i_btn ; 44    ; 1        ; 6            ; 0            ; 2           ; 4                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVCMOS ; User                 ; no             ;
 ; i_clk ; 64    ; 2        ; 8            ; 3            ; 4           ; 46                    ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 
@@ -294,7 +294,7 @@ The pin-out file can be found in C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/
 ; 41       ; 33         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 42       ; 34         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 43       ; 35         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 44       ; 36         ; 1        ; i_btn          ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; 44       ; 36         ; 1        ; i_btn          ; input  ; 3.3-V LVCMOS ;           ; Column I/O ; Y               ; no       ; Off          ;
 ; 45       ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; 46       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; 47       ; 37         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
@@ -586,7 +586,7 @@ Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
 Info (186469): Finished processing fast register assignments
 Info (176235): Finished register packing
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -599,16 +599,16 @@ Info (170195): Router estimated average interconnect usage is 3% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/output_files/LED_SHIFT.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 6142 megabytes
-    Info: Processing ended: Thu Dec 28 01:23:51 2023
+    Info: Peak virtual memory: 6151 megabytes
+    Info: Processing ended: Thu Dec 28 01:40:32 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
 +----------------------------+
