@@ -47,13 +47,13 @@ i_btn => r_state.OUTPUTSELECT
 i_btn => r_state.OUTPUTSELECT
 i_btn => r_state.OUTPUTSELECT
 i_btn => r_btn_press.DATAIN
-o_g_led[0] << r_g_led_status[0].DB_MAX_OUTPUT_PORT_TYPE
-o_g_led[1] << r_g_led_status[1].DB_MAX_OUTPUT_PORT_TYPE
-o_g_led[2] << r_g_led_status[2].DB_MAX_OUTPUT_PORT_TYPE
-o_g_led[3] << r_g_led_status[3].DB_MAX_OUTPUT_PORT_TYPE
-o_g_led[4] << r_g_led_status[4].DB_MAX_OUTPUT_PORT_TYPE
-o_g_led[5] << r_g_led_status[5].DB_MAX_OUTPUT_PORT_TYPE
-o_g_led[6] << r_g_led_status[6].DB_MAX_OUTPUT_PORT_TYPE
-o_g_led[7] << r_g_led_status[7].DB_MAX_OUTPUT_PORT_TYPE
+o_g_led[0] <= r_g_led_status[0].DB_MAX_OUTPUT_PORT_TYPE
+o_g_led[1] <= r_g_led_status[1].DB_MAX_OUTPUT_PORT_TYPE
+o_g_led[2] <= r_g_led_status[2].DB_MAX_OUTPUT_PORT_TYPE
+o_g_led[3] <= r_g_led_status[3].DB_MAX_OUTPUT_PORT_TYPE
+o_g_led[4] <= r_g_led_status[4].DB_MAX_OUTPUT_PORT_TYPE
+o_g_led[5] <= r_g_led_status[5].DB_MAX_OUTPUT_PORT_TYPE
+o_g_led[6] <= r_g_led_status[6].DB_MAX_OUTPUT_PORT_TYPE
+o_g_led[7] <= r_g_led_status[7].DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -76,4 +76,3 @@ set_location_assignment PIN_19 -to o_g_led[6]
 set_instance_assignment -name RESERVE_PIN AS_OUTPUT_DRIVING_VCC -to o_g_led[6]
 set_location_assignment PIN_20 -to o_g_led[7]
 set_instance_assignment -name RESERVE_PIN AS_OUTPUT_DRIVING_VCC -to o_g_led[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to i_btn

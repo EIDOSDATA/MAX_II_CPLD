@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition"
 
-// DATE "12/28/2023 01:40:35"
+// DATE "12/28/2023 01:51:38"
 
 // 
 // Device: Altera EPM240T100C5 Package TQFP100
@@ -149,7 +149,7 @@ maxii_io \i_clk~I (
 defparam \i_clk~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_44,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// Location: PIN_44,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 maxii_io \i_btn~I (
 	.datain(gnd),
 	.oe(gnd),
