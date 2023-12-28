@@ -23,16 +23,7 @@ module LED_SHIFT
 // {ALTERA_ARGS_BEGIN} DO NOT REMOVE THIS LINE!
 	i_clk,
 	i_btn,
-	/*
-	o_g_led0,
-	o_g_led1,
-	o_g_led2,
-	o_g_led3,
-	o_g_led4,
-	o_g_led5,
-	o_g_led6,
-	o_g_led7
-	*/
+	
 	o_g_led,
 	o_r_led,
 	o_y_led,
@@ -61,17 +52,6 @@ output [7:0]	o_m_fnd;
 output [7:0]	o_m2_fnd;
 output [7:0]	o_s_fnd;
 output [7:0]	o_s2_fnd;
-
-/*
-output 			o_g_led0;
-output 			o_g_led1;
-output 			o_g_led2;
-output 			o_g_led3;
-output 			o_g_led4;
-output 			o_g_led5;
-output 			o_g_led6;
-output 			o_g_led7;
-*/
 
 /* REG :: TIMER CLOCK */
 reg [31:0]	r_clk_cnt;
@@ -107,14 +87,13 @@ end
 /* BUTTON - FLIP FLOP */
 always @ (posedge i_clk) 
 begin
-
-	// BUTTON PRESSED
-	if (~i_btn)
+	/* BUTTON PRESSED */
+	if (!i_btn)
 	begin
 		r_btn_press <= 1;
 	end
 	
-	// NOT PRESSED
+	/* NOT PRESSED */
 	else
 	begin
 		r_state <= c_next_state;
@@ -122,11 +101,17 @@ begin
 	end	
 end
 
+/* TIMER ENABLE CHK */
+always @ (posedge i_clk)
+begin
+	r_timer_en <= c_timer_en;	
+end
+
 /* TIMER - FLIP FLOP */
 always @ (posedge i_clk)
 begin
-	r_timer_en <= c_timer_en;
-	if (~r_timer_en)
+
+	if (!r_timer_en)
 	begin
 		r_clk_cnt <= 0;
 	end
@@ -150,11 +135,11 @@ end
 always @ (posedge i_clk)
 begin
 	
-	if (~r_timer_en)
+	if (!r_timer_en)
 	begin
 		r_g_led_status <= 0;
 	end
-	
+
 	else
 	begin
 		/* CLOCK COUNTING */
@@ -218,30 +203,18 @@ begin
 				c_next_state = `ST_STOP;
 			end
 		end
-		
-	
 	endcase	
 end
 
 /* LED ASSIGN */
-/*
-assign o_g_led0 = r_g_led_en;
-assign o_g_led1 = r_g_led_en;
-assign o_g_led2 = r_g_led_en;
-assign o_g_led3 = r_g_led_en;
-assign o_g_led4 = r_g_led_en;
-assign o_g_led5 = r_g_led_en;
-assign o_g_led6 = r_g_led_en;
-assign o_g_led7 = r_g_led_en;
-*/
-
 //assign o_g_led = r_g_led_status;
-/* LED */
+
+/* LED - FULL DRIVE */
 assign o_g_led = 8'hFF;
 assign o_r_led = 2'b11;
 assign o_y_led = 4'hF;
 
-/* FND */
+/* FND - FULL DRIVE */
 assign o_t_fnd = 8'hFF;
 assign o_t2_fnd = 8'hFF;
 assign o_m_fnd = 8'hFF;

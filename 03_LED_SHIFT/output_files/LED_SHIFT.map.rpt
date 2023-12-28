@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LED_SHIFT
-Thu Dec 28 03:15:17 2023
+Thu Dec 28 14:41:24 2023
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Dec 28 03:15:17 2023          ;
+; Analysis & Synthesis Status ; Successful - Thu Dec 28 14:41:24 2023          ;
 ; Quartus Prime Version       ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name               ; LED_SHIFT                                      ;
 ; Top-level Entity Name       ; LED_SHIFT                                      ;
@@ -134,8 +134,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -274,87 +274,87 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Thu Dec 28 03:15:13 2023
+    Info: Processing started: Thu Dec 28 14:41:18 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LED_SHIFT -c LED_SHIFT
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file led_shift.v
     Info (12023): Found entity 1: LED_SHIFT File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 21
 Info (12127): Elaborating entity "LED_SHIFT" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "o_g_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
-    Warning (13410): Pin "o_g_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
-    Warning (13410): Pin "o_g_led[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
-    Warning (13410): Pin "o_g_led[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
-    Warning (13410): Pin "o_g_led[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
-    Warning (13410): Pin "o_g_led[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
-    Warning (13410): Pin "o_g_led[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
-    Warning (13410): Pin "o_g_led[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 55
-    Warning (13410): Pin "o_r_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 56
-    Warning (13410): Pin "o_r_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 56
-    Warning (13410): Pin "o_y_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 57
-    Warning (13410): Pin "o_y_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 57
-    Warning (13410): Pin "o_y_led[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 57
-    Warning (13410): Pin "o_y_led[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 57
-    Warning (13410): Pin "o_t_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
-    Warning (13410): Pin "o_t_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
-    Warning (13410): Pin "o_t_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
-    Warning (13410): Pin "o_t_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
-    Warning (13410): Pin "o_t_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
-    Warning (13410): Pin "o_t_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
-    Warning (13410): Pin "o_t_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
-    Warning (13410): Pin "o_t_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 58
-    Warning (13410): Pin "o_t2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
-    Warning (13410): Pin "o_t2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
-    Warning (13410): Pin "o_t2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
-    Warning (13410): Pin "o_t2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
-    Warning (13410): Pin "o_t2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
-    Warning (13410): Pin "o_t2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
-    Warning (13410): Pin "o_t2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
-    Warning (13410): Pin "o_t2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 59
-    Warning (13410): Pin "o_m_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
-    Warning (13410): Pin "o_m_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
-    Warning (13410): Pin "o_m_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
-    Warning (13410): Pin "o_m_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
-    Warning (13410): Pin "o_m_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
-    Warning (13410): Pin "o_m_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
-    Warning (13410): Pin "o_m_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
-    Warning (13410): Pin "o_m_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 60
-    Warning (13410): Pin "o_m2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
-    Warning (13410): Pin "o_m2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
-    Warning (13410): Pin "o_m2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
-    Warning (13410): Pin "o_m2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
-    Warning (13410): Pin "o_m2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
-    Warning (13410): Pin "o_m2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
-    Warning (13410): Pin "o_m2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
-    Warning (13410): Pin "o_m2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 61
-    Warning (13410): Pin "o_s_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
-    Warning (13410): Pin "o_s_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
-    Warning (13410): Pin "o_s_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
-    Warning (13410): Pin "o_s_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
-    Warning (13410): Pin "o_s_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
-    Warning (13410): Pin "o_s_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
-    Warning (13410): Pin "o_s_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
-    Warning (13410): Pin "o_s_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 62
-    Warning (13410): Pin "o_s2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
-    Warning (13410): Pin "o_s2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
-    Warning (13410): Pin "o_s2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
-    Warning (13410): Pin "o_s2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
-    Warning (13410): Pin "o_s2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
-    Warning (13410): Pin "o_s2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
-    Warning (13410): Pin "o_s2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
-    Warning (13410): Pin "o_s2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 63
+    Warning (13410): Pin "o_g_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 46
+    Warning (13410): Pin "o_g_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 46
+    Warning (13410): Pin "o_g_led[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 46
+    Warning (13410): Pin "o_g_led[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 46
+    Warning (13410): Pin "o_g_led[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 46
+    Warning (13410): Pin "o_g_led[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 46
+    Warning (13410): Pin "o_g_led[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 46
+    Warning (13410): Pin "o_g_led[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 46
+    Warning (13410): Pin "o_r_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 47
+    Warning (13410): Pin "o_r_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 47
+    Warning (13410): Pin "o_y_led[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 48
+    Warning (13410): Pin "o_y_led[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 48
+    Warning (13410): Pin "o_y_led[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 48
+    Warning (13410): Pin "o_y_led[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 48
+    Warning (13410): Pin "o_t_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 49
+    Warning (13410): Pin "o_t_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 49
+    Warning (13410): Pin "o_t_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 49
+    Warning (13410): Pin "o_t_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 49
+    Warning (13410): Pin "o_t_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 49
+    Warning (13410): Pin "o_t_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 49
+    Warning (13410): Pin "o_t_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 49
+    Warning (13410): Pin "o_t_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 49
+    Warning (13410): Pin "o_t2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 50
+    Warning (13410): Pin "o_t2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 50
+    Warning (13410): Pin "o_t2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 50
+    Warning (13410): Pin "o_t2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 50
+    Warning (13410): Pin "o_t2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 50
+    Warning (13410): Pin "o_t2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 50
+    Warning (13410): Pin "o_t2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 50
+    Warning (13410): Pin "o_t2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 50
+    Warning (13410): Pin "o_m_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 51
+    Warning (13410): Pin "o_m_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 51
+    Warning (13410): Pin "o_m_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 51
+    Warning (13410): Pin "o_m_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 51
+    Warning (13410): Pin "o_m_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 51
+    Warning (13410): Pin "o_m_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 51
+    Warning (13410): Pin "o_m_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 51
+    Warning (13410): Pin "o_m_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 51
+    Warning (13410): Pin "o_m2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (13410): Pin "o_m2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (13410): Pin "o_m2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (13410): Pin "o_m2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (13410): Pin "o_m2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (13410): Pin "o_m2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (13410): Pin "o_m2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (13410): Pin "o_m2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (13410): Pin "o_s_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (13410): Pin "o_s_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (13410): Pin "o_s_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (13410): Pin "o_s_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (13410): Pin "o_s_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (13410): Pin "o_s_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (13410): Pin "o_s_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (13410): Pin "o_s_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
+    Warning (13410): Pin "o_s2_fnd[0]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 54
+    Warning (13410): Pin "o_s2_fnd[1]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 54
+    Warning (13410): Pin "o_s2_fnd[2]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 54
+    Warning (13410): Pin "o_s2_fnd[3]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 54
+    Warning (13410): Pin "o_s2_fnd[4]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 54
+    Warning (13410): Pin "o_s2_fnd[5]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 54
+    Warning (13410): Pin "o_s2_fnd[6]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 54
+    Warning (13410): Pin "o_s2_fnd[7]" is stuck at VCC File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 54
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_btn" File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 53
-    Warning (15610): No output dependent on input pin "i_clk" File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 52
+    Warning (15610): No output dependent on input pin "i_btn" File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 44
+    Warning (15610): No output dependent on input pin "i_clk" File: C:/Users/eidos/GitHub/MAX_II_CPLD/03_LED_SHIFT/LED_SHIFT.v Line: 43
 Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 62 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 67 warnings
     Info: Peak virtual memory: 4705 megabytes
-    Info: Processing ended: Thu Dec 28 03:15:17 2023
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Thu Dec 28 14:41:24 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:07
 
 
