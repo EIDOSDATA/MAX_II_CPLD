@@ -63,40 +63,40 @@ CHIP  "LED_SHIFT"  ASSIGNED TO AN: EPM240T100C5
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-GND*                         : 1         :        :                   :         : 2         :                
-GND*                         : 2         :        :                   :         : 1         :                
-GND*                         : 3         :        :                   :         : 1         :                
-GND*                         : 4         :        :                   :         : 1         :                
-GND*                         : 5         :        :                   :         : 1         :                
-GND*                         : 6         :        :                   :         : 1         :                
-GND*                         : 7         :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 1         :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 2         :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 3         :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 4         :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 5         :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 6         :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 7         :        :                   :         : 1         :                
 o_g_led[0]                   : 8         : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 10        : gnd    :                   :         :           :                
 GNDINT                       : 11        : gnd    :                   :         :           :                
 o_g_led[1]                   : 12        : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCINT                       : 13        : power  :                   : 2.5V/3.3V :           :                
-GND*                         : 14        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 14        :        :                   :         : 1         :                
 o_g_led[2]                   : 15        : output : 3.3-V LVTTL       :         : 1         : Y              
 o_g_led[3]                   : 16        : output : 3.3-V LVTTL       :         : 1         : Y              
 o_g_led[4]                   : 17        : output : 3.3-V LVTTL       :         : 1         : Y              
 o_g_led[5]                   : 18        : output : 3.3-V LVTTL       :         : 1         : Y              
 o_g_led[6]                   : 19        : output : 3.3-V LVTTL       :         : 1         : Y              
 o_g_led[7]                   : 20        : output : 3.3-V LVTTL       :         : 1         : Y              
-GND*                         : 21        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 21        :        :                   :         : 1         :                
 TMS                          : 22        : input  :                   :         : 1         :                
 TDI                          : 23        : input  :                   :         : 1         :                
 TCK                          : 24        : input  :                   :         : 1         :                
 TDO                          : 25        : output :                   :         : 1         :                
-GND*                         : 26        :        :                   :         : 1         :                
-GND*                         : 27        :        :                   :         : 1         :                
-GND*                         : 28        :        :                   :         : 1         :                
-GND*                         : 29        :        :                   :         : 1         :                
-GND*                         : 30        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 26        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 27        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 29        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 30        :        :                   :         : 1         :                
 VCCIO1                       : 31        : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 32        : gnd    :                   :         :           :                
-GND*                         : 33        :        :                   :         : 1         :                
-GND*                         : 34        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 33        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 34        :        :                   :         : 1         :                
 o_s2_fnd[7]                  : 35        : output : 3.3-V LVTTL       :         : 1         : Y              
 o_s2_fnd[6]                  : 36        : output : 3.3-V LVTTL       :         : 1         : Y              
 o_s2_fnd[5]                  : 37        : output : 3.3-V LVTTL       :         : 1         : Y              
